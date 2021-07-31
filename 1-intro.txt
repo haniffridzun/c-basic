@@ -1,0 +1,70 @@
+## keywords & identifiers ##
+C keywords - predefined, reserved words that have special meanings to compiler
+
+example: int money;
+
+'int' is a keyword that indicates 'money' is a variable of type integer
+
+C identifiers - name given to entities such as variables, functions, structures etc.
+
+money is identifiers. identifier names must be different from keywords.
+
+================================================
+## variables & constants ##
+variable is container to hold data. each variable should be given a unique name (identifier)
+
+example: int playerScore = 95;
+
+'playerScore' is variable of 'int' type, assigned value '95'
+
+C is a strongly typed language (the variable type cannot be changed once it is declared)
+
+example:
+    int number = 5; //integer variable
+    number = 5.5    //float data - error
+
+================================================
+## literals ##
+data used for representing fixed values. cannot assign different values to these terms.
+
+example: '1', '2.5', 'c'
+
+================================================
+## constants ##
+constants variable use const keyword. its value cannot be changed
+
+example: const double PI = 3.14;
+
+type        size    format specifier
+int         >1, 4   %d, %i
+char        1       %c
+float       4       %f
+double      8       %lf
+long double >9, 12  %Lf
+short int   2       %hd
+long int    >1, 8   %ld, %li
+signed char 1       %c
+
+================================================
+## void ##
+incomple type. it means nothing or no type (absent)
+
+example: if a function is not returning anything, its return type should be 'void'
+
+================================================
+## signed and unsigned ##
+are type modifiers. can alter the data storage of a data type by using them.
+
+example: unsigned int x; int y;
+
+here, variable 'x' can hold only 0 and positive values bacause we have used the 'unsigned' modifier. while 'y' can hold all positive and negative integers
+
+===============================================
+## output ##
+printf() is one of the main output function. it sends formatted output to the screen.
+
+==============================================
+## input ##
+scanf() is one of commonly used function to take input from the user.
+
+==============================================
