@@ -62,3 +62,36 @@ skips current iteration of loop and continues with next iteration
 
 syntax: continue;
 
+===========================================
+## switch ##
+allows us to execute one code block among many alternatives
+
+syntax:
+switch (exp)
+{
+	case constant1:
+		//statement
+		break;
+
+	case constant2:
+		//statement
+		break;
+	.
+	.
+	.
+	default:
+		//default statement
+}
+
+===============================================
+## goto ##
+allows us to transfer control of the program to specified label
+
+syntax:
+goto label;
+.
+.
+label:
+statement;
+
+'label' is an identifier. when 'goto' statement is encountered, the control of program jumps to 'label:' and starts executing the code.
