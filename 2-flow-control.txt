@@ -1,0 +1,64 @@
+## if statement ##
+syntax:
+
+if (text expression)
+{
+	//code
+}
+
+==========================================
+## if...else statement ##
+syntax:
+
+if (text express)
+{
+	// run code if test expression is true
+} else {
+	// run code if test expression is false
+}
+
+==========================================
+## loop ##
+types of loops:
+1. for loop
+2. while loop
+3. do...while loop
+
+==========================================
+## for loop ##
+syntax:
+
+for (initialization; text-expression; update-statement)
+{
+	// statement
+}
+
+==========================================
+## while loop ##
+syntax:
+
+while (test-expression)
+{
+	// statement
+}
+
+==========================================
+## do...while loop ##
+syntax:
+
+do {
+	// statement
+} while(test-statement);
+
+===========================================
+## break ##
+ends the loop immediately when it is encountered.
+
+syntax: break;
+
+===========================================
+## continue ##
+skips current iteration of loop and continues with next iteration
+
+syntax: continue;
+
