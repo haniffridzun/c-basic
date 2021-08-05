@@ -1,0 +1,43 @@
+## function ##
+types:
+	- standard libry functions (SLF)
+	- user-defined functions
+
+SLF - built in funtions in c
+example: 'printf()' is SLF to send formatted output.
+this function is defined in 'stdio.h' header file.
+to use this function, we need to include the header using '#include'
+
+user-defined function - create our own function
+example:
+	#include <stdio.h>
+	void functionName()
+	{...}
+	int main()
+	{	...
+		functionName()
+		...
+	}
+
+advantages of user-defined function
+	- reusable codes
+	- large program can be divide into smaller modules
+	- program will be easier to understand, maintain and debug
+
+==========================================================
+## function prototype ##
+the declaration of a function that specifies function's name,
+parameters, and return type. it doesn't contain function body.
+it gives information to compiler that the function may later be used in program.
+
+syntax:
+returnType functionName(type1 argument 1, type 2 argument2, ...)
+
+example:
+int addNum(int a, int b);
+
+function prototype is not needed if the user-defined function is defined
+before the main() function.
+
+=========================================================
+##  ##
