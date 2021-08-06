@@ -40,4 +40,34 @@ function prototype is not needed if the user-defined function is defined
 before the main() function.
 
 =========================================================
-##  ##
+## types of user-defined functions ##
+
+example 1: no arguments passed, no return value
+
+example 2: no arguments passed but a return value
+
+example 3: argument passed but no return value
+
+example 4: argument passed and return value
+
+============================================================
+## recursion ##
+a function that calls itself
+
+syntax:
+void recurse() {
+	...
+	recurse()
+	...
+}
+int main() {
+	...
+	recurse()
+	...
+}
+
+recursion continues until some some condition is met to prevent it.
+to prevent, if-else statement(or similar approach) can be used
+
+============================================================
+## storage class ##
