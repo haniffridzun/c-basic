@@ -24,7 +24,7 @@ advantages of user-defined function
 	- large program can be divide into smaller modules
 	- program will be easier to understand, maintain and debug
 
-==========================================================
+=====================================================
 ## function prototype ##
 the declaration of a function that specifies function's name,
 parameters, and return type. it doesn't contain function body.
@@ -39,7 +39,7 @@ int addNum(int a, int b);
 function prototype is not needed if the user-defined function is defined
 before the main() function.
 
-=========================================================
+====================================================
 ## types of user-defined functions ##
 
 example 1: no arguments passed, no return value
@@ -50,7 +50,7 @@ example 3: argument passed but no return value
 
 example 4: argument passed and return value
 
-============================================================
+====================================================
 ## recursion ##
 a function that calls itself
 
@@ -69,5 +69,12 @@ int main() {
 recursion continues until some some condition is met to prevent it.
 to prevent, if-else statement(or similar approach) can be used
 
-============================================================
+====================================================
 ## storage class ##
+it determines the scope, visibility and lifetime of a variable.
+
+types of storage class:
+	1.local - declared inside a block, exists only inside the block in which it is declared
+	2.global - declared outside of all functions, accessible from any function inside program
+	3.register - declared using 'register' keyword faster than local variables
+	4.static - declared using 'static' keyword. value of static var persists until the end of program
