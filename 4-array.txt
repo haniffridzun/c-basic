@@ -1,0 +1,14 @@
+## Arrays ##
+is a variable that can store multiple values.
+
+syntax: dataType arrayName[arraySize];
+
+example: int data[100]; // store 100 integers
+
+==============================================
+## access array ##
+access elements of an array by indices.
+
+	- array start with index 0
+	- if array size is n, to access last element, index 'n-1'
+
