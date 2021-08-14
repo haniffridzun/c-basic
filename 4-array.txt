@@ -12,3 +12,17 @@ access elements of an array by indices.
 	- array start with index 0
 	- if array size is n, to access last element, index 'n-1'
 
+==============================================
+## multidimensional arrays ##
+ create an array of arrays
+
+ example: float x[3][4];
+
+ 'x' is a two dimensional array. it can hold 12 elements.
+
+ initialize 3d array:
+int test[2][3][4] = {
+	{{1,2,3,4},{5,6,7,8},{9,10,11,12}},
+	{{13,14,15,16},{17,18,19,20},{21,22,23,24}}
+	};
+
