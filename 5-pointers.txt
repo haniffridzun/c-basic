@@ -1,0 +1,60 @@
+## Address ##
+if you have a variable "var" in program, "&var" will give you its address in memory.
+
+example:
+{
+    int main = 5;
+    printf("var: %d\n", var);
+    // use &
+    printf("address of var: %p", &var);
+    return 0;
+}
+
+output:
+var: 5
+address of var: 2686778
+
+=============================================
+## Pointer ##
+special variables that are used to store address
+
+syntax:
+int *p;     // we declared a pointer "p" of "int" type
+
+============================================
+## assign address to pointer ##
+
+example:
+int *pc, c;
+c = 5;
+pc = &c;            // address of "c" is assigned to "pc" pointer
+printf("%d", pc);   // output: 3452 --- get the address
+printf("%d", *pc);  // output: 5 --- get the value stored in that address
+
+============================================
+## changing value of pointer ##
+
+example 1:
+int *pc, c;
+c = 5;
+pc = &c;
+c = 1;
+printf("%d", c);    // output: 1
+printf("%d", *pc);  // output: 1 --- pc and address of c is the same
+
+example 2:
+int *pc, c;
+c = 5;
+pc = &c;
+*pc = 1;
+printf("%d", *pc);  // output: 1
+printf("%d", c);    // output: 1 --- pc and address of c is the same
+
+example 3:
+int *pc, c, d;
+c = 5;
+d = -15;
+pc = &c;
+printf("%d", *pc);  // output: 5
+pc = &d;
+printf("%d", *pc);  // output: -15
