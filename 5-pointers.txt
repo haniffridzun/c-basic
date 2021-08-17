@@ -57,4 +57,34 @@ d = -15;
 pc = &c;
 printf("%d", *pc);  // output: 5
 pc = &d;
-printf("%d", *pc);  // output: -15
+printf("%d", *pc);  // output: -15 
+
+==============================================
+## arrays and pointers ##
+
+example:
+...
+    int x[4];
+    int i;
+    for(i = 0; i < 4; i++){
+        printf("&x[%d] = %p\n", i, &x[i]);
+    }
+    printf("address of array x: %p", x);
+...
+
+output:
+&x[0] = 1450734448
+&x[1] = 1450734452
+&x[2] = 1450734456
+&x[3] = 1450734460
+address of array x: 1450734448
+
+there is a difference of 4 bytes between two consecutive elements of array.
+it is because the size of int is 4 bytes.
+
+&x[0] and x have same address because variable x points to the first element of the array.
+
+x[0] is equivalent to *x
+
+basically, x[i] equivalent to *(x+i)
+and &x[i] equivalent to x+i
