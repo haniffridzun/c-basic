@@ -88,3 +88,36 @@ x[0] is equivalent to *x
 
 basically, x[i] equivalent to *(x+i)
 and &x[i] equivalent to x+i
+
+==============================================
+## pass address and pointer ##
+
+pass address as arguments to functions
+
+to accept address in functions definition, we can use pointer.
+
+==============================================
+## dynamic memory allocation ##
+sometimes the size of array you declared may be insufficient.
+to solve this issue, you can allocate memory manually during run-time.
+
+malloc() --- memory allocation
+allocate memory and leaves the memory uninitialized
+it returns a pointer of void which can be casted into pointers of any form.
+syntax: ptr = (castType*) malloc(size);
+example: ptr = (float*) malloc(100 * sizeof(float));
+it allocate 400 bytes of memory (size of float is 4 bytes)
+
+calloc() --- contigous allication
+allocate memory and initializes all bits to zero.
+syntax: ptr = (castType*) calloc(n, size);
+example: prt = (float*) calloc(25, sizeof(float));
+allocates contigous space in memory for 25 elements of type float
+
+free() --- use to release the space of memory allocated by calloc() or malloc()
+syntax: free(ptr);
+
+realloc() --- reallocate the size of previously allocated memory
+syntax: prt = realloc(ptr, x);
+
+================================================
