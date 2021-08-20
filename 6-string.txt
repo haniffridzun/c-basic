@@ -1,1 +1,46 @@
 ## String ##
+a sequence of characters terminated with null character "\0"
+
+example: char c[] = "c string";
+
+compiler reads as: [c] [ ] [s] [t] [r] [i] [n] [g] [\0]
+
+=============================================
+## assign values to string ##
+array and string do not support assigment operator once it is declared
+
+example:
+char c[100];
+c = "c programming"; // error! array type is not assignable
+
+note: use strcpy() function to copy string
+
+=============================================
+## read string ##
+use "scanf()" to read a string
+
+use "fgets()" to read a line of string and "puts()" to display the string
+
+example:
+...
+    char name[20];
+    printf("enter name: ");
+    fgets(name, sizeof(name), stdin);
+    printf("name: ");
+    puts(name);
+    return 0;
+...
+
+============================================
+## passing string to function ##
+can be passed to function in a similar way as arrays
+
+===========================================
+## commonly used string functions ##
+
+strlen() --- calculate length of string
+strcpy() --- copies string to another
+strcmp() --- compares two strings
+strcat() --- concatenates two strings
+strlwr() --- converst string to lowercase
+strupr() --- converst string to uppercase
