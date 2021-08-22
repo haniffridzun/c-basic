@@ -1,0 +1,69 @@
+## Struct ##
+
+a struct (structure) is a collection of variables (can be of different types) under a single name.
+
+syntax:
+struct strucName {
+    dataType member1;
+    dataType member2;
+    ...
+};
+
+example:
+struct Person {
+    char name[50];
+    int citNo;
+    float salary;
+};
+
+===============================================
+## create struct variables ##
+
+when struct type is declared, no storage or memory is allocated.
+to allocate memory of given structure type and work with it, we
+need to create variables.
+
+example:
+int main() {
+    struct person person1, person2, p[20];
+    return 0;
+}
+
+===============================================
+## access members of  structure ##
+
+2 types of operators to access members of structure:
+- "." --- member operators
+- "->" --- structure pointer operator
+
+example: person2.salary
+
+===============================================
+## typedef ##
+
+example:
+typedef struct Distance {
+    int feet;
+    float inch;
+} distance;
+
+int main() {
+    distance d1, d2;
+}
+
+===============================================
+## nested structures ##
+
+example:
+struct complex {
+    int img;
+    float real;
+};
+struct number {
+    struct complex comp;
+    int integers;
+} num1, num2;
+
+set img of num2 variable to 11: num2.comp.img = 11;
+
+================================================
