@@ -1,0 +1,43 @@
+## file handling ##
+
+file operations:
+- create new file
+- open existing file
+- closing file
+- reading and writing to file
+
+
+when working with files, you need to declare a pointer of type file:
+FILE *fptr;
+
+==================================================================
+## opening file ##
+
+openinf file - for creation and edit:
+fptr = fopen("fileopen", "mode");
+
+example:
+fopen("E:\\cprogram\\newprogram.txt", "w");
+
+===================================================================
+## mode ##
+
+r --- open for read
+
+rb --- open for read in binary
+
+w --- open for writing
+
+wb --- open for writing in binary
+
+a --- open for append
+
+ab --- open for append in binary
+
+r+ --- open for both reading and writing
+
+===================================================================
+## closing file ##
+
+example:
+fclose(fptr);

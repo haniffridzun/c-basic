@@ -67,3 +67,19 @@ struct number {
 set img of num2 variable to 11: num2.comp.img = 11;
 
 ================================================
+## struct and Function ##
+
+================================================
+## unions ##
+
+user defined type similar to structs except that unions
+can only hold one member value at a time
+
+example:
+union car {
+    char name[50];
+    int price;
+};
+
+to allocate memory for given union type and work with it,
+we need to create variables.
